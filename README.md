@@ -16,8 +16,8 @@ To do so we've implement a flask interface to get user's input. This repository 
 1. Score for the metric and test data prepared by your TAs.
 2. Url of our main service : https://french-text-difficulty-350020.lm.r.appspot.com
 3.  Endpoints of all the services used in our project  :
-        - Cloud autoML API:  https://automl.googleapis.com 
-        - Vertex AI API : https://us-central1-aiplatform.googleapis.com
+        *  Cloud autoML API:  https://automl.googleapis.com 
+        *  Vertex AI API : https://us-central1-aiplatform.googleapis.com
 4.  Tools: we've use 
         - Flask to build our web application
         - UI has been done from scracth without using any user framework
