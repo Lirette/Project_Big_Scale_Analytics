@@ -8,9 +8,9 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 
 Our main folders:
 
-* [Data](https://github.com/Rolex-Github/Team_Rolex_BigScale/tree/main/Data) :  Usefull data to build the model
+* [Data](https://github.com/Rolex-Github/Team_Rolex_BigScale/tree/main/Data) : it holds usefull data to build the modelwith autoML
 * [static](https://github.com/Rolex-Github/Team_Rolex_BigScale/tree/main/static)  : it contains the css files of our pages
 * [templates](https://github.com/Rolex-Github/Team_Rolex_BigScale/tree/main/templates) : it contains the html code of our flask app  to get users' input and print the difficulty level 
 * [Flask_app](https://github.com/Rolex-Github/Team_Rolex_BigScale/tree/main/Flask_app)  : it contains 3 files : the python code to run our application, the requirements.txt that holds the dependencies usefull to deploy the app and finally the app.yaml file to specify the app to deploy
-* [Notebook](https://github.com/Rolex-Github/Team_Rolex_BigScale/tree/main/Notebooks) : 
+* [Notebook](https://github.com/Rolex-Github/Team_Rolex_BigScale/tree/main/Notebook) :  
 
