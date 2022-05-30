@@ -2,21 +2,59 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home_stylesheet.css') }}"> 
-            <title>French Text difficulty</title>
-                <body>
-                    <h3>Lingorank</h3>
-                        <div id = "container1">
-                            <p>Un peu de texte</p>
-                        </div>
-                        <div id = "container2">
-                            <form  action = "{{ url_for('result')}}" method = "POST">
-                                <label for="Frase"></label>
-                                <input type="text" id="frase" name="targetfrase" placeholder="Enter a french text.." required> 
-                                <input type="submit" value="Get difficulty!">
-                            </form>
-                        </div>
-                </body>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/result_stylesheet.css') }}">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+        <script>
+            function codeAddress() {
+                var x = document.getElementById("customers");
+                var y = document.getElementById("btn");
+                x.style.visibility = "hidden";
+                y.style.visibility = "hidden";
+                let timerInterval
+                Swal.fire({
+                title: 'Prediction in progress...',
+                html: 'Results will be available  <b></b> shortly.',
+                width: 650,
+                timer: 2000,
+                timerProgressBar: true,
+                didOpen: () => {
+                    Swal.showLoading()
+                    const b = Swal.getHtmlContainer().querySelector('b')
+                    timerInterval = setInterval(() => {
+                    b.textContent = Swal.getTimerLeft()
+                    }, 100)
+                },
+                willClose: () => {
+                    clearInterval(timerInterval)
+                }
+                }).then((result) => {
+                /* Read more about handling dismissals below */
+                if (result.dismiss === Swal.DismissReason.timer) {
+                    x.style.visibility = "visible";
+                    y.style.visibility = "visible"; 
+                }
+                })
+            }
+            window.onload = codeAddress;
+        </script>   
     </head>
+   <body onLoad="codeAddress()">
+            <h1>Prediction</h1>
+            <div id = container2>
+                <table id="customers">
+                    <tr>
+                        <th>Level</th>
+                        <th>Score</th>
+                    </tr>
+                    {% for annotation_payload in data %}
+                    <tr>
+                        <td> {{annotation_payload.display_name}} </td>
+                        <td> {{annotation_payload.classification.score}} </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            <button class="button" id="btn" ><span><a href="{{url_for('hello')}}" >Back to Home</a> </span></button>
+        </div>   
+   </body>
 </html>
