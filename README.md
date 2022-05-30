@@ -14,16 +14,18 @@ To do so we've implement a flask interface to get user's input. This repository 
 ## Final Deliverables:
 
 1. Score for the metric and test data prepared by your TAs.
-2. Url of our main service :https://french-text-difficulty-350020.lm.r.appspot.com/
-3.  Endpoints of all the services used in our project:
+2. Url of our main service : https://french-text-difficulty-350020.lm.r.appspot.com/
+3  Url of our dockerized applicatiion: https://predict-hfjvhfouoa-uc.a.run.app
+4.  Endpoints of all the services used in our project:
      *  Cloud autoML API:  https://automl.googleapis.com 
+     *  Cloud RUN :
      *  Vertex AI API : https://us-central1-aiplatform.googleapis.com
-4.  Tools: we've use 
+5.  Tools: we've use 
      * Flask to build our web application
      * UI has been done from scracth without using any user framework
      * Docker has been use to containerize our application
      * Google cloud storage to store the data, google cloud automl to build our model and make prediction
-5.  [click here to wacth our youube video](https://www.youtube.com/watch?v=jZB6OaHvPEQ)
+6.  [click here to wacth our youube video](https://www.youtube.com/watch?v=jZB6OaHvPEQ)
 
 
 
