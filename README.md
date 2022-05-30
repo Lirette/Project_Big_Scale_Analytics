@@ -36,6 +36,7 @@ To do so we've implement a flask interface to get user's input. This repository 
      * Google cloud storage to store the data imported from csv file
      * Google cloud automl to build our model and make prediction 
 6.  [click here to wacth our youube video](https://www.youtube.com/watch?v=jZB6OaHvPEQ)
+7.  [click here to wacth our youube video](https://youtu.be/cbpn4Eaki-E)
 
 
 
