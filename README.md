@@ -23,13 +23,16 @@ To do so we've implement a flask interface to get user's input. This repository 
 3. Url of our dockerized application deployed on cloud run: https://predict-hfjvhfouoa-uc.a.run.app
 4.  Endpoints of all the services used in our project:
      *  Cloud autoML API:  https://automl.googleapis.com 
-     *  Cloud RUN :
+     *  Cloud RUN service :
      *  Vertex AI API : https://us-central1-aiplatform.googleapis.com
 5.  Tools: we've use 
      * Flask to build our web application
-     * UI has been done from scracth without using any user framework
+     * UI has been done from scracth (using html, css, javascript) without using any user framework
      * Docker has been use to containerize our application
-     * Google cloud storage to store the data, google cloud automl to build our model and make prediction
+     * Google App Engine to deploy the flask app on the web
+     * Google cloud run to deploy our dockerised flask application on the web
+     * Google cloud storage to store the data,
+     * Google cloud automl to build our model and make prediction 
 6.  [click here to wacth our youube video](https://www.youtube.com/watch?v=jZB6OaHvPEQ)
 
 
