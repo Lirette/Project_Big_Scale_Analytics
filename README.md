@@ -16,9 +16,9 @@ To do so we've implement a flask interface to get user's input. This repository 
 ## Final Deliverables:
 
 1. Score for the metric :
-     * accuracy :
-     * precision :
-     * recall : 
+     * accuracy :0.56
+     * precision : 0.69
+     * recall : 0.32
 2. Url of our service deployed on APP ENGINE: https://french-text-difficulty-350020.lm.r.appspot.com/
 3. Url of our dockerized application deployed on cloud run: https://predict-hfjvhfouoa-uc.a.run.app
 4.  Endpoints of all the services used in our project:
@@ -30,8 +30,8 @@ To do so we've implement a flask interface to get user's input. This repository 
      * UI has been done from scracth (using html, css, javascript) without using any user framework
      * Docker has been use to containerize our application
      * Google App Engine to deploy the flask app on the web
-     * Google cloud run to deploy our dockerised flask application on the web
-     * Google cloud storage to store the data,
+     * Google cloud Run to deploy our dockerised flask application on the web
+     * Google cloud storage to store the data imported from csv file
      * Google cloud automl to build our model and make prediction 
 6.  [click here to wacth our youube video](https://www.youtube.com/watch?v=jZB6OaHvPEQ)
 
