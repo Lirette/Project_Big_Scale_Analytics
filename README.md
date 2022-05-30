@@ -14,8 +14,8 @@ To do so we've implement a flask interface to get user's input. This repository 
 ## Final Deliverables:
 
 1. Score for the metric and test data prepared by your TAs.
-2. Url of our main service : https://french-text-difficulty-350020.lm.r.appspot.com/
-3  Url of our dockerized applicatiion: https://predict-hfjvhfouoa-uc.a.run.app
+2. Url of our service on APP ENGINE: https://french-text-difficulty-350020.lm.r.appspot.com/
+3. Url of our dockerized application deployed: https://predict-hfjvhfouoa-uc.a.run.app
 4.  Endpoints of all the services used in our project:
      *  Cloud autoML API:  https://automl.googleapis.com 
      *  Cloud RUN :
